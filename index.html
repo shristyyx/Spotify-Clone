@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Youtify Home Page</title>
+    <style>
+        *{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+body{
+    background-color: rgb(57, 29, 110);
+}
+
+
+.wrapper .sidebar{
+    background: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+.wrapper .sidebar .mainmenu li a{
+    display: block;
+    padding: 9px 25px;
+    color: rgb(241, 237, 237);
+    font-size: 14px;
+    position: relative;
+}
+
+.wrapper .sidebar .mainmenu li a .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+.wrapper .sidebar .mainmenu li a:hover
+{
+    font-weight: bold;
+}
+.wrapper .sidebar .playlistmenu li a{
+    display: block;
+    padding: 9px 25px;
+    color: rgb(241, 237, 237);
+    font-size: 13px;
+    position: relative;
+}
+.wrapper .sidebar .playlistmenu li a:hover
+{
+    font-weight: bold;
+}
+
+.mainbody{
+    padding-left:250px ;
+    padding-right: 30px;
+    padding-bottom: 100px;
+}
+
+
+.mainbody h1 {
+
+    padding-top: 90px;
+    padding-left: 10px;
+    
+}
+
+.mainbody h2{
+    padding-left: 10px;
+}
+
+
+
+.playlisttable .songname{
+padding-left: 50px;
+padding-right:50px ;
+
+background-color: rgb(181, 170, 229);
+
+
+}
+
+
+.playlisttable .songicon {
+    padding-left: 10px;
+}
+
+.playlisttable{
+
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.playlisttable .songicon img{
+    height: 90px;
+
+}
+
+
+.playlisttable tr :hover{
+    background-color: #9277f6;
+    
+}
+
+
+ .episodes span {
+    display: inline-block;
+    
+}
+
+.mainbody .episodes span h5 a:hover{
+    
+    text-decoration: underline;
+
+}
+
+
+.mainbody .epinames tr td .epicon img{
+    height: 200px;
+    padding: 15px;
+
+}
+
+.mainbody .epinames tr :hover{
+    background-color: #9277f6;
+}
+.mainbody .epinames tr td .epiname h4 {
+
+padding-left: 15px;
+}
+.mainbody .epinames tr td .epiname p{
+
+padding-left: 15px;
+padding-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+    </style>
+
+<script src="https://kit.fontawesome.com/b90e8dde3f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+    <div class="sidebar">
+        <ul class="mainmenu">
+            <li>
+                <a href="#" class="active">
+                    <span class="icon"><i class="fas fa-home"></i></span>
+                    <span class="item">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <span class="item">Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa-solid fa-map"></i></span>
+                    <span class="item">Library</span>
+                </a>
+            </li>
+            <br>
+            <br>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa-solid fa-square-plus"></i></span>
+                    <span class="item">Create Palylist</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa-solid fa-heart"></i></span>
+                    <span class="item">Liked Songs</span>
+                </a>
+            </li>
+        </ul>
+        <br>
+        <hr color="grey">
+        <br>
+        <ul class="playlistmenu">
+            <li><a href="#">
+                This is how you fall in love
+            </a>
+            </li>
+            <li><a href="#">
+                Always there for you
+            </a>
+            </li>
+            <li><a href="#">
+                Dua
+            </a>
+            </li>
+            <li><a href="#">
+                Dear future Boyfriend
+            </a>
+            </li>
+            <li><a href="#">
+                Princesses don't cry
+            </a>
+            </li>
+            <li><a href="#">
+                IDGAF
+            </a>
+            </li>
+            <li><a href="#">
+                New Rules
+            </a>
+            </li>
+            <li><a href="#">
+                Not a love song
+            </a>
+            </li>
+            <li><a href="#">
+                Sorry not Sorry
+            </a>
+            </li>
+            <li><a href="#">
+                Tell if you wanna go home
+            </a>
+            </li>
+            <li><a href="#">
+                Let's overthink
+            </a>
+            </li>
+            <li><a href="#">
+                Over a cup of coffee
+            </a>
+            </li>
+            
+        </ul>
+    
+    </div>
+    </div>
+
+<div class="mainbody">
+    <h1>Good Evening </h1>
+    <br>
+
+    <table class="playlisttable">
+        <tr>
+
+            <td class="songicon">
+                
+                <img src="C:\Users\shris\OneDrive\Desktop\spotify\song1.jpg" alt="">
+            </td>
+
+
+            <td class="songname">
+            
+            <a href="https://youtu.be/EdhR-ry40So">
+            <h3>Always there for you</h3></a>
+            
+            
+            </td>
+
+
+            <td class="songicon">
+                
+                    <img src="C:\Users\shris\OneDrive\Desktop\spotify\song2.jpg" alt="">
+            </td>
+            <td class="songname">
+                <h3>Sorry not Sorry</h3>
+            </td>
+
+
+
+
+            
+            <td class="songicon">
+                
+                <img src="C:\Users\shris\OneDrive\Desktop\spotify\song3.jpg" alt="">
+            </td>
+            <td class="songname">
+                <h3>Over a cup of Coffee</h3>
+            </td>
+
+
+
+        </tr>
+
+        <tr>
+            <td class="songicon">
+                
+                <img src="C:\Users\shris\OneDrive\Desktop\spotify\song4.jpg" alt="">
+            </td>
+            <td class="songname">
+                <h3>This is how you fall in Love</h3>
+            </td>
+
+
+            <td class="songicon">
+                
+                <img src="C:\Users\shris\OneDrive\Desktop\spotify\song5.jpg" alt="">
+            </td>
+            <td class="songname">
+                <h3>Princesses don't Cry</h3>
+            </td>
+
+
+            
+            <td class="songicon">
+                
+                <img src="C:\Users\shris\OneDrive\Desktop\spotify\song6.jpg" alt="">
+            </td>
+            <td class="songname">
+                <h3>Scars to your Beautiful</h3>
+            </td>
+
+
+
+        </tr>
+
+
+
+    </table>
+
+    <br>
+
+
+<div class="episodes">
+    <span>
+        <h2>
+            Episodes for you
+        </h2>
+    </span>
+    <span style="float: right;">
+        <h5><a href="#">SEE ALL</a> </h5>
+    </span>
+
+</div>
+    
+<br>
+
+
+<table class="epinames">
+
+        <tr>
+            <td>
+                <span class="epicon">
+                        <img src="pl1.jpg" alt="">
+                        <br>
+                </span>
+                <span class="epiname">
+                    <h4>It's 3AM </h4>
+                    <p>and you're still awake</p>
+                </span>
+
+
+            </td>
+
+
+            <td>
+                <span class="epicon">
+                    <img src="pl2.jpg" alt="">
+                </span>
+                <span class="epiname">
+                    <h4>sooner or later</h4>
+                    <p>ill be there</p>
+                </span>
+
+
+            </td>
+
+
+            <td>
+                <span class="epicon">
+                    <img src="pl3.jpg" alt="">
+                </span>
+                <span class="epiname">
+                    <h4>How so ever</h4>
+                    <p>it appears</p>
+                </span>
+
+
+            </td>
+
+
+            <td>
+                <span class="epicon">
+                    <img src="pl4.jpg" alt="">
+                </span>
+                <span class="epiname">
+                    <h4>It's 3AM </h4>
+                    <p>and you're still awake</p>
+                </span>
+
+
+            </td>
+
+
+            <td>
+                <span class="epicon">
+                    <img src="pl5.jpg" alt="">
+                </span>
+                <span class="epiname">
+                    <h4>It's 3AM </h4>
+                    <p>and you're still awake</p>
+                </span>
+
+
+            </td>
+
+
+            <td>
+                <span class="epicon">
+                    <img src="pl6.jpg" alt="">
+                </span>
+                <span class="epiname">
+                    <h4>It's 3AM </h4>
+                    <p>and you're still awake</p>
+                </span>
+
+
+            </td>
+        </tr>
+
+
+
+
+</table>
+
+
+<br>
+<br>
+
+
+<div class="episodes">
+    <span>
+        <h2>
+            Recently played
+        </h2>
+    </span>
+    <span style="float: right;">
+        <h5><a href="#">SEE ALL</a> </h5>
+    </span>
+
+</div>
+
+<br>
+<br>
+
+<table class="epinames">
+
+    <tr>
+        <td>
+            <span class="epicon">
+                    <img src="pl1.jpg" alt="">
+                    <br>
+            </span>
+            <span class="epiname">
+                <h4>It's 3AM </h4>
+                <p>and you're still awake</p>
+            </span>
+
+
+        </td>
+
+
+        <td>
+            <span class="epicon">
+                <img src="pl2.jpg" alt="">
+            </span>
+            <span class="epiname">
+                <h4>sooner or later</h4>
+                <p>ill be there</p>
+            </span>
+
+
+        </td>
+
+
+        <td>
+            <span class="epicon">
+                <img src="pl3.jpg" alt="">
+            </span>
+            <span class="epiname">
+                <h4>How so ever</h4>
+                <p>it appears</p>
+            </span>
+
+
+        </td>
+
+
+        <td>
+            <span class="epicon">
+                <img src="pl4.jpg" alt="">
+            </span>
+            <span class="epiname">
+                <h4>It's 3AM </h4>
+                <p>and you're still awake</p>
+            </span>
+
+
+        </td>
+
+
+        <td>
+            <span class="epicon">
+                <img src="pl5.jpg" alt="">
+            </span>
+            <span class="epiname">
+                <h4>It's 3AM </h4>
+                <p>and you're still awake</p>
+            </span>
+
+
+        </td>
+
+
+        <td>
+            <span class="epicon">
+                <img src="pl6.jpg" alt="">
+            </span>
+            <span class="epiname">
+                <h4>It's 3AM </h4>
+                <p>and you're still awake</p>
+            </span>
+
+
+        </td>
+    </tr>
+
+
+
+
+</table>
+
+
+
+<br>
+<br>
+
+
+<div class="episodes">
+    <span>
+        <h2>
+            More like Always there for you
+        </h2>
+    </span>
+    <span style="float: right;">
+        <h5><a href="#">SEE ALL</a> </h5>
+    </span>
+
+</div>
+
+<br>
+<br>
+
+<table class="epinames">
+
+    <tr>
+        <td>
+            <span class="epicon">
+                    <img src="pl1.jpg" alt="">
+                    <br>
+            </span>
+            <span class="epiname">
+                <h4>It's 3AM </h4>
+                <p>and you're still awake</p>
+            </span>
+
+
+        </td>
+
+
+        <td>
+            <span class="epicon">
+                <img src="pl2.jpg" alt="">
+            </span>
+            <span class="epiname">
+                <h4>sooner or later</h4>
+                <p>ill be there</p>
+            </span>
+
+
+        </td>
+
+
+        <td>
+            <span class="epicon">
+                <img src="pl3.jpg" alt="">
+            </span>
+            <span class="epiname">
+                <h4>How so ever</h4>
+                <p>it appears</p>
+            </span>
+
+
+        </td>
+
+
+        <td>
+            <span class="epicon">
+                <img src="pl4.jpg" alt="">
+            </span>
+            <span class="epiname">
+                <h4>It's 3AM </h4>
+                <p>and you're still awake</p>
+            </span>
+
+
+        </td>
+
+
+        <td>
+            <span class="epicon">
+                <img src="pl5.jpg" alt="">
+            </span>
+            <span class="epiname">
+                <h4>It's 3AM </h4>
+                <p>and you're still awake</p>
+            </span>
+
+
+        </td>
+
+
+        <td>
+            <span class="epicon">
+                <img src="pl6.jpg" alt="">
+            </span>
+            <span class="epiname">
+                <h4>It's 3AM </h4>
+                <p>and you're still awake</p>
+            </span>
+
+
+        </td>
+    </tr>
+
+</table>
+
+</div>
+
+
+
+    
+
+
+
+</body>
+</html>
